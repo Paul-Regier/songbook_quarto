@@ -1,0 +1,35 @@
+/* Song body styling */
+.song {
+    white-space: pre-wrap;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
+    line-height: 1.1;
+    font-size: 1.05rem;
+}
+
+/* STACK chord above lyric */
+.ch {
+    display: inline-grid !important;
+    grid-template-rows: auto 1.2em;
+    justify-items: center;
+    align-items: end;
+    line-height: 1;
+    margin: 0 0.05em;
+    vertical-align: bottom;
+}
+
+.ch .chord {
+    font-weight: 700;
+    font-size: 0.9em;
+    line-height: 0.9;
+    border-bottom: 0 !important;
+    transform: translateY(0.05em);
+}
+
+.ch .lyric {
+    line-height: 1;
+}
+
+/* Safety: remove any underline that might come from old rules */
+.song .chord {
+    border-bottom: 0 !important;
+}

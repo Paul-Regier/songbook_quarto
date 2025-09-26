@@ -1,0 +1,13 @@
+---
+title: "Children's Songbook"
+listing:
+  contents: songs
+  sort: "title"
+  type: default
+  fields: [title, description]
+---
+
+Welcome! This is a simple, fast site for children's songs with guitar chords.
+
+> Add a new file to the **songs/** folder and it will appear below automatically.
+

@@ -1,0 +1,18 @@
+<script>
+(function(){
+  function chordify(el){
+    const chordRegex = /\[([^\]]+)\]/g;
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      if (!node.nodeValue || !/\S/.test(node.nodeValue)) return;
+      const span = document.createElement('span');
+      span.innerHTML = node.nodeValue.replace(chordRegex, '<span class="chord">$1</span>');
+      node.parentNode.replaceChild(span, node);
+    });
+  }
+  function run(){ document.querySelectorAll('.song').forEach(chordify); }
+  document.addEventListener('DOMContentLoaded', run);
+})();
+</script>

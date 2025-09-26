@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Children's Songbook"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Songs
+        href: songs/
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+    css: songbook.css
+filters:
+  - chordify.lua
