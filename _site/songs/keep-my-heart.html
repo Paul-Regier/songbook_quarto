@@ -68,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Fira+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../songbook.css">
@@ -93,10 +94,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../songs/"> 
-<span class="menu-text">Songs</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -138,14 +135,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="song">
-<p><em>Verse 1</em></p>
+<p>Verse 1</p>
 <p><span class="ch"><span class="chord">D</span><span class="lyric">Lord,</span></span> today, keep my heart,<br>
 Keep it all the <span class="ch"><span class="chord">Em</span><span class="lyric">day.</span></span><br>
 While I’m young, <span class="ch"><span class="chord">Em7</span><span class="lyric">keep</span></span> my heart<br>
 <span class="ch"><span class="chord">A7</span><span class="lyric">Soft,</span></span> dear Lord, I <span class="ch"><span class="chord">D</span><span class="lyric">pray;</span></span><br>
-Lord, I would keep my heart through <span class="ch"><span class="chord">G</span><span class="lyric">every</span></span> <span class="ch"><span class="chord">Em</span><span class="lyric">day</span></span><br>
-<span class="ch"><span class="chord">G</span><span class="lyric">Soft</span></span> and open <span class="ch"><span class="chord">A7</span><span class="lyric">unto</span></span> <span class="ch"><span class="chord">D</span><span class="lyric">You.</span></span></p>
-<p><em>Verse 2</em></p>
+Lord, I would keep my heart through <span class="ch"><span class="chord">G</span><span class="lyric">every</span></span> <span class="ch"><span class="chord">Em</span><span class="lyric">day</span></span></p>
+<p>Soft and open <span class="ch"><span class="chord">A7</span><span class="lyric">unto</span></span> <span class="ch"><span class="chord">D</span><span class="lyric">You.</span></span></p>
+<p>Verse 2</p>
 <p>Lord today, keep my mouth,<br>
 From complaining much.<br>
 Even when things are tough,<br>
@@ -229,7 +226,7 @@ Give me Lord a happy heart.</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Paul-Regier\.github\.io\/songbook_quarto\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -1,13 +1,11 @@
 ---
-title: "Children's Songbook"
+title: "Church in Norman Children's Songbook"
 listing:
   contents: songs
   sort: "title"
   type: default
-  fields: [title, description]
+  fields: [title]
 ---
 
-Welcome! This is a simple, fast site for children's songs with guitar chords.
-
-> Add a new file to the **songs/** folder and it will appear below automatically.
+> Songs are listed by title, alphabetically below. You also search by words in the song.
 

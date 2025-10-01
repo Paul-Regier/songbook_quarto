@@ -3,19 +3,19 @@ title: "Keep My Heart"
 description: "with New Verse 2"
 page-layout: article
 ---
-
 <div class="song">
 
-*Verse 1*
+Verse 1
 
 [D] Lord, today, keep my heart,  
 Keep it all the [Em] day.  
 While I'm young, [Em7] keep my heart  
 [A7] Soft, dear Lord, I [D] pray;  
 Lord, I would keep my heart through [G] every [Em] day  
-[G] Soft and open [A7] unto [D] You.
 
-*Verse 2*
+Soft and open [A7] unto [D] You.
+
+Verse 2
 
 Lord today, keep my mouth,  
 From complaining much.  

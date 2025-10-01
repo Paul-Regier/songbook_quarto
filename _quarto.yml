@@ -8,13 +8,15 @@ website:
     left:
       - text: Home
         href: index.qmd
-      - text: Songs
-        href: songs/
 
 format:
   html:
     theme: cosmo
     toc: false
     css: songbook.css
+    include-in-header:
+    - text: |
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+
 filters:
   - chordify.lua

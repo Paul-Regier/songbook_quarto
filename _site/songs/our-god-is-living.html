@@ -68,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Fira+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../songbook.css">
@@ -93,10 +94,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../songs/"> 
-<span class="menu-text">Songs</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -156,14 +153,14 @@ His living Body!<br>
 We just express Him.<br>
 Jesus is our reality.</p>
 <p><em>Verse 3</em></p>
-<p><span class="ch"><span class="chord">C</span><span class="lyric">Our</span></span> God is <span class="ch"><span class="chord">G</span><span class="lyric">living,</span></span><br>
-He’s not a <span class="ch"><span class="chord">D</span><span class="lyric">statue,</span></span><br>
-Our God can <span class="ch"><span class="chord">A</span><span class="lyric">see</span></span> us,<br>
-our God can <span class="ch"><span class="chord">D</span><span class="lyric">hear,</span></span> <span class="ch"><span class="chord">D7</span><span class="lyric">too.</span></span><br>
-He’s not an <span class="ch"><span class="chord">G</span><span class="lyric">idol</span></span><br>
-of gold or <span class="ch"><span class="chord">D</span><span class="lyric">silver,</span></span><br>
-<span class="ch"><span class="chord">A</span><span class="lyric">We</span></span> serve the <span class="ch"><span class="chord">A7</span><span class="lyric">God</span></span><br>
-who’s real and <span class="ch"><span class="chord">D-C-D</span><span class="lyric">true!</span></span></p>
+<p>Our God is living,<br>
+He’s not a statue,<br>
+Our God can see us,<br>
+our God can hear, too.<br>
+He’s not an idol<br>
+of gold or silver,<br>
+We serve the God<br>
+who’s real and true!</p>
 </div>
 
 
@@ -241,7 +238,7 @@ who’s real and <span class="ch"><span class="chord">D-C-D</span><span class="l
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Paul-Regier\.github\.io\/songbook_quarto\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

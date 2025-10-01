@@ -1,28 +1,37 @@
 /* Song body styling */
 .song {
     white-space: pre-wrap;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
-    line-height: 1.1;
+    /* lyrics in serif */
+    font-family: 'Merriweather', Georgia, serif;
+    /* tweak for song line spacing */
+    line-height: 1.0;
     font-size: 1.05rem;
 }
 
 /* STACK chord above lyric */
 .ch {
     display: inline-grid !important;
-    grid-template-rows: auto 1.2em;
-    justify-items: center;
+    grid-template-rows: auto auto;
+    /* left align chord lyric */
+    justify-items: start;
     align-items: end;
-    line-height: 1;
+    line-height: 1.1;
     margin: 0 0.05em;
     vertical-align: bottom;
+    /* increase chord–lyric space */
+    row-gap: 0.25em;
 }
 
 .ch .chord {
+    /* chords in monospace */
+    font-family: 'Fira Mono', 'Courier New', monospace !important;
     font-weight: 700;
     font-size: 0.9em;
     line-height: 0.9;
     border-bottom: 0 !important;
     transform: translateY(0.05em);
+    /* 🎨 light blue chords */
+    color: #3b82f6;
 }
 
 .ch .lyric {
