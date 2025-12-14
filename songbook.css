@@ -1,9 +1,5 @@
-/* Left-align homepage song listing */
-.quarto-listing,
-.quarto-listing ul,
-.quarto-listing li,
-.quarto-listing a {
-    text-align: left;
+body.index main.content {
+    text-align: left !important;
 }
 
 /* Song body styling */
