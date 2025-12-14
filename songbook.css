@@ -1,6 +1,40 @@
+/* ================================
+   FORCE LEFT ALIGN – HOMEPAGE LIST
+   ================================ */
+
+/* Remove Quarto centering behavior */
 body.index main.content {
     text-align: left !important;
 }
+
+/* Override Quarto listing flex alignment */
+body.index .quarto-listing .list {
+    align-items: flex-start !important;
+}
+
+
+/* Ensure list items are left-anchored */
+body.index .quarto-listing li {
+    width: 100%;
+    text-align: left !important;
+    margin-left: 0 !important;
+}
+
+/* Force anchor text to behave like a left-aligned block */
+body.index .quarto-listing li a {
+    display: block;
+    text-align: left !important;
+}
+
+/* Optional: make the index feel more like a songbook */
+body.index .quarto-listing {
+    max-width: 900px;
+    margin-left: 0;
+}
+
+/* ================================
+   SONG BODY (unchanged)
+   ================================ */
 
 /* Song body styling */
 .song {
