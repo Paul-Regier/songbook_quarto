@@ -1,3 +1,11 @@
+/* Left-align homepage song listing */
+.quarto-listing,
+.quarto-listing ul,
+.quarto-listing li,
+.quarto-listing a {
+    text-align: left;
+}
+
 /* Song body styling */
 .song {
     white-space: pre-wrap;
