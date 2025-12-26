@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -195,119 +195,142 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1759356472182" data-listing-reading-time-sort="1" data-listing-word-count-sort="181">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/before-god-put.html" class="no-external">Before God put the leaves on the trees</a>
-</h3>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="metadata">
-<a href="./songs/before-god-put.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1759356032071" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/behind-the-scenes.html" class="no-external">Behind the Scenes</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/behind-the-scenes.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1759356492161" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/tree-with-roots.html" class="no-external">I am a tree with roots</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/tree-with-roots.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1761486660516" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/keep-my-heart.html" class="no-external">Keep My Heart</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/keep-my-heart.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1759000960847" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/Lord-you-are-more-precious.html" class="no-external">Lord, You Are More Precious Than Silver</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/Lord-you-are-more-precious.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1761486431833" data-listing-reading-time-sort="1" data-listing-word-count-sort="117">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/our-god-is-living.html" class="no-external">Our God Is Living</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/our-god-is-living.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-file-modified-sort="1761486573655" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/our-god-is-longsuffering.html" class="no-external">Our God Is Long-suffering</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/our-god-is-longsuffering.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-file-modified-sort="1759003065690" data-listing-reading-time-sort="1" data-listing-word-count-sort="58">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/romans13-1.html" class="no-external">Romans 13:1</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/romans13-1.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-file-modified-sort="1759003881854" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/take-twelve-strones-out.html" class="no-external">Take Twelve Stones Out</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/take-twelve-strones-out.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-file-modified-sort="1759003066825" data-listing-reading-time-sort="1" data-listing-word-count-sort="103">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./songs/you-cant-always-trust.html" class="no-external">You Can’t Always Trust What You See</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./songs/you-cant-always-trust.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1766783816192" data-listing-reading-time-sort="1" data-listing-word-count-sort="181" data-listing-title-sort="Before God put the leaves on the trees" data-listing-filename-sort="before-god-put.qmd">
+<td>
+<a href="./songs/before-god-put.html" class="title listing-title">Before God put the leaves on the trees</a>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1759356032071" data-listing-reading-time-sort="1" data-listing-word-count-sort="116" data-listing-title-sort="Behind the Scenes" data-listing-filename-sort="behind-the-scenes.qmd">
+<td>
+<a href="./songs/behind-the-scenes.html" class="title listing-title">Behind the Scenes</a>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1766784028387" data-listing-reading-time-sort="2" data-listing-word-count-sort="318" data-listing-title-sort="Can you say, How do you do?" data-listing-filename-sort="can-you-look-em.qmd">
+<td>
+<a href="./songs/can-you-look-em.html" class="title listing-title">Can you say, How do you do?</a>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1765672705962" data-listing-reading-time-sort="1" data-listing-word-count-sort="111" data-listing-title-sort="Don't Blame Others" data-listing-filename-sort="dont-blame-others.qmd">
+<td>
+<a href="./songs/dont-blame-others.html" class="title listing-title">Don’t Blame Others</a>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1766783699547" data-listing-reading-time-sort="1" data-listing-word-count-sort="110" data-listing-title-sort="Ev'rybody Ought to Know" data-listing-filename-sort="evrybody-ought-to-know.qmd">
+<td>
+<a href="./songs/evrybody-ought-to-know.html" class="title listing-title">Ev’rybody Ought to Know</a>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1759356492161" data-listing-reading-time-sort="1" data-listing-word-count-sort="94" data-listing-title-sort="I am a tree with roots" data-listing-filename-sort="tree-with-roots.qmd">
+<td>
+<a href="./songs/tree-with-roots.html" class="title listing-title">I am a tree with roots</a>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-file-modified-sort="1761486660516" data-listing-reading-time-sort="1" data-listing-word-count-sort="84" data-listing-title-sort="Keep My Heart" data-listing-filename-sort="keep-my-heart.qmd">
+<td>
+<a href="./songs/keep-my-heart.html" class="title listing-title">Keep My Heart</a>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-file-modified-sort="1765672705194" data-listing-reading-time-sort="1" data-listing-word-count-sort="103" data-listing-title-sort="Listen, Listen, Your Conscience Speaks to You" data-listing-filename-sort="listen-listen.qmd">
+<td>
+<a href="./songs/listen-listen.html" class="title listing-title">Listen, Listen, Your Conscience Speaks to You</a>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-file-modified-sort="1759000960847" data-listing-reading-time-sort="1" data-listing-word-count-sort="157" data-listing-title-sort="Lord, You Are More Precious Than Silver" data-listing-filename-sort="Lord-you-are-more-precious.qmd">
+<td>
+<a href="./songs/Lord-you-are-more-precious.html" class="title listing-title">Lord, You Are More Precious Than Silver</a>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-file-modified-sort="1761486431833" data-listing-reading-time-sort="1" data-listing-word-count-sort="117" data-listing-title-sort="Our God Is Living" data-listing-filename-sort="our-god-is-living.qmd">
+<td>
+<a href="./songs/our-god-is-living.html" class="title listing-title">Our God Is Living</a>
+</td>
+
+</tr>
+
+<tr data-index="10" data-listing-file-modified-sort="1766783759342" data-listing-reading-time-sort="1" data-listing-word-count-sort="63" data-listing-title-sort="Our God Is Long-suffering" data-listing-filename-sort="our-god-is-longsuffering.qmd">
+<td>
+<a href="./songs/our-god-is-longsuffering.html" class="title listing-title">Our God Is Long-suffering</a>
+</td>
+
+</tr>
+
+<tr data-index="11" data-listing-file-modified-sort="1759003065690" data-listing-reading-time-sort="1" data-listing-word-count-sort="58" data-listing-title-sort="Romans 13:1" data-listing-filename-sort="romans13-1.qmd">
+<td>
+<a href="./songs/romans13-1.html" class="title listing-title">Romans 13:1</a>
+</td>
+
+</tr>
+
+<tr data-index="12" data-listing-file-modified-sort="1766783767595" data-listing-reading-time-sort="1" data-listing-word-count-sort="38" data-listing-title-sort="Singing, Praying, Praising, Thanking" data-listing-filename-sort="singing-praying-praising-thanking.qmd">
+<td>
+<a href="./songs/singing-praying-praising-thanking.html" class="title listing-title">Singing, Praying, Praising, Thanking</a>
+</td>
+
+</tr>
+
+<tr data-index="13" data-listing-file-modified-sort="1765672709070" data-listing-reading-time-sort="2" data-listing-word-count-sort="249" data-listing-title-sort="Take Twelve Stones Out" data-listing-filename-sort="take-twelve-strones-out.qmd">
+<td>
+<a href="./songs/take-twelve-strones-out.html" class="title listing-title">Take Twelve Stones Out</a>
+</td>
+
+</tr>
+
+<tr data-index="14" data-listing-file-modified-sort="1759003066825" data-listing-reading-time-sort="1" data-listing-word-count-sort="103" data-listing-title-sort="You Can't Always Trust What You See" data-listing-filename-sort="you-cant-always-trust.qmd">
+<td>
+<a href="./songs/you-cant-always-trust.html" class="title listing-title">You Can’t Always Trust What You See</a>
+</td>
+
+</tr>
+
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

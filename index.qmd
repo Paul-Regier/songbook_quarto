@@ -3,7 +3,7 @@ title: "Church in Norman Children's Songbook"
 listing:
   contents: songs
   sort: "title"
-  type: default
+  type: table
   fields: [title]
 ---
 
