@@ -1,5 +1,5 @@
 ---
-title: "I am a tree with roots"
+title: "I am a Tree with Roots"
 description: ""
 page-layout: article
 ---

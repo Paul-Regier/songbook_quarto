@@ -1,8 +1,9 @@
 ---
-title: "Before God put the leaves on the trees"
+title: "Before God Put the Leaves on the Trees"
 description: ""
 page-layout: article
 ---
+
 <div class="song">
 
 [A] Before God put the [D] leaves on the [A] trees,  
