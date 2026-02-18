@@ -129,18 +129,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="song">
-<p><em>Verse 1 </em></p>
-<p><span class="ch"><span class="chord">E</span><span class="lyric">Be-</span></span> <span class="ch"><span class="chord">A</span><span class="lyric">hind</span></span> the scenes, be- <span class="ch"><span class="chord">E</span><span class="lyric">hind</span></span> the scenes<br>
+<p>1<br>
+<span class="ch"><span class="chord">E</span><span class="lyric">Be-</span></span> <span class="ch"><span class="chord">A</span><span class="lyric">hind</span></span> the scenes, be- <span class="ch"><span class="chord">E</span><span class="lyric">hind</span></span> the scenes<br>
 The <span class="ch"><span class="chord">B</span><span class="lyric">hea</span></span> vens <span class="ch"><span class="chord">B7</span><span class="lyric">rule</span></span> in <span class="ch"><span class="chord">E</span><span class="lyric">everything.</span></span><br>
 Our <span class="ch"><span class="chord">A</span><span class="lyric">prayers</span></span> are heard! God <span class="ch"><span class="chord">E</span><span class="lyric">sends</span></span> His Word;<br>
 Be <span class="ch"><span class="chord">B</span><span class="lyric">strong,</span></span> be <span class="ch"><span class="chord">B7</span><span class="lyric">peaceful,</span></span> and be <span class="ch"><span class="chord">E</span><span class="lyric">strong.</span></span></p>
-<p><em>Verse 2 </em></p>
-<p>When troubles come, go find a chum;<br>
+<p>2<br>
+When troubles come, go find a chum;<br>
 Together we can overcome!<br>
 Just step away, take time to pray!<br>
 Request compassions of our God.</p>
-<p><em>Verse 3 </em></p>
-<p>God grants, God gives, God makes us live;<br>
+<p>3<br>
+God grants, God gives, God makes us live;<br>
 We’re His — our ways belong to Him.<br>
 Because, behind the scenes, behind the scenes,<br>
 The heavens rule in everything.</p>
@@ -223,7 +223,7 @@ The heavens rule in everything.</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Paul-Regier\.github\.io\/songbook_quarto\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

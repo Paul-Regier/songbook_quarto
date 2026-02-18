@@ -5,7 +5,7 @@ page-layout: article
 
 <div class="song">
 
-(Capo 1)
+[*Capo 1*]
 
 [A] Listen, listen, your conscience [D] speaks to [A] you.  
 [E7] If you will listen, you'll know what to [A] do.  

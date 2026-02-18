@@ -4,11 +4,13 @@ page-layout: article
 ---
 <div class="song">
 
+1  
 [D] Our God is long-suffering  
 Be tenderhearted, kind to one [A/D] another  
 [D] Our God is long-suffering  
 Be tenderhearted, kind to one [A/D] another  
 
+2  
 [D] Don't hide or run away,  
 [A] Be mean, that's not the [D] way.  
 [D] Care for them, even pray,   

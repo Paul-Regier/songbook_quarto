@@ -5,12 +5,12 @@ page-layout: article
 
 <div class="song">
 
-**Refrain: (sing first refrain twice)**
+[Refrain] (sing first refrain twice)
  
-[D] Ev'rybody ought to know [echo]  
-[D] Ev'rybody ought to know [echo]  
-[D] Ev'rybody ought to [A] know [A7] [echo]  
- Who Jesus [D] is. [Echo]  
+> [D] Ev'rybody ought to know [echo]  
+> [D] Ev'rybody ought to know [echo]  
+> [D] Ev'rybody ought to [A] know [A7] [echo]  
+> Who Jesus [D] is. [Echo]  
 
 1  
 [D] He's the [D7] Lily of the [G] Valley,  

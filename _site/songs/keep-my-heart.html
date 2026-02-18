@@ -135,13 +135,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="song">
-<p>Verse 1</p>
-<p><span class="ch"><span class="chord">D</span><span class="lyric">Lord,</span></span> today, keep my heart. Keep it all the <span class="ch"><span class="chord">Em</span><span class="lyric">day.</span></span><br>
+<p>1<br>
+<span class="ch"><span class="chord">D</span><span class="lyric">Lord,</span></span> today, keep my heart. Keep it all the <span class="ch"><span class="chord">Em</span><span class="lyric">day.</span></span><br>
 While I’m young, <span class="ch"><span class="chord">Em7</span><span class="lyric">keep</span></span> my heart <span class="ch"><span class="chord">A7</span><span class="lyric">Soft,</span></span> dear Lord, I <span class="ch"><span class="chord">D</span><span class="lyric">pray;</span></span><br>
 Lord, I would keep my heart through <span class="ch"><span class="chord">G</span><span class="lyric">every</span></span> <span class="ch"><span class="chord">Em</span><span class="lyric">day</span></span><br>
 Soft and open <span class="ch"><span class="chord">A7</span><span class="lyric">unto</span></span> <span class="ch"><span class="chord">D</span><span class="lyric">You.</span></span></p>
-<p>Verse 2</p>
-<p>Lord today, keep my mouth, from complaining much.<br>
+<p>2<br>
+Lord today, keep my mouth, from complaining much.<br>
 Even when things are tough, Never giving up.<br>
 Lord, I would not complain when things are hard<br>
 Give me Lord a happy heart.</p>
@@ -222,7 +222,7 @@ Give me Lord a happy heart.</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Paul-Regier\.github\.io\/songbook_quarto\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

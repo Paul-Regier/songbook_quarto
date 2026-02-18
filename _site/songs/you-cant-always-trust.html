@@ -129,15 +129,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="song">
-<p>You <span class="ch"><span class="chord">D</span><span class="lyric">can’t</span></span> always trust what you <span class="ch"><span class="chord">A</span><span class="lyric">see.</span></span><br>
+<p>1<br>
+You <span class="ch"><span class="chord">D</span><span class="lyric">can’t</span></span> always trust what you <span class="ch"><span class="chord">A</span><span class="lyric">see.</span></span><br>
 You <span class="ch"><span class="chord">A7</span><span class="lyric">might</span></span> end up being <span class="ch"><span class="chord">D</span><span class="lyric">deceived.</span></span><br>
 If <span class="ch"><span class="chord">G</span><span class="lyric">Israel</span></span> got <span class="ch"><span class="chord">Em</span><span class="lyric">fooled,</span></span> then <span class="ch"><span class="chord">D</span><span class="lyric">how</span></span> about <span class="ch"><span class="chord">Bm</span><span class="lyric">you?</span></span><br>
 You <span class="ch"><span class="chord">Em</span><span class="lyric">can’t</span></span> always <span class="ch"><span class="chord">A</span><span class="lyric">trust</span></span> what you <span class="ch"><span class="chord">D</span><span class="lyric">see.</span></span></p>
-<p>The Gibeonites were disguised.<br>
+<p>2<br>
+The Gibeonites were disguised.<br>
 That took Israel by surprise.<br>
 Much trouble occurred, not seeking the Lord.<br>
 But acting according to sight.</p>
-<p>Things aren’t always as they appear.<br>
+<p>3<br>
+Things aren’t always as they appear.<br>
 So turn to the Lord, He’s so near.<br>
 His Word is your light, walk by faith not sight.<br>
 Things aren’t always as they appear.</p>
@@ -219,7 +222,7 @@ Things aren’t always as they appear.</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Paul-Regier\.github\.io\/songbook_quarto\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

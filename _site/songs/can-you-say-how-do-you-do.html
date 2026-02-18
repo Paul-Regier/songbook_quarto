@@ -129,12 +129,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="song">
-<p><em>(Capo 3)</em></p>
+<p>[<em>Capo 3</em>]</p>
 <p>1<br>
-<span class="ch"><span class="chord">G</span><span class="lyric">Can</span></span> you say, “How do you do, do you do, do you do?”<br>
-<span class="ch"><span class="chord">G</span><span class="lyric">Can</span></span> you say, “How do you [Em] do, how do you [Am] do?” <span class="ch"><span class="chord">D</span><span class="lyric">&nbsp;</span></span><br>
-We can <span class="ch"><span class="chord">Am7</span><span class="lyric">say,</span></span> “How do you [D7] do?” and “I’m just [G] fine and how are you?”<br>
-<span class="ch"><span class="chord">C</span><span class="lyric">We</span></span> can <span class="ch"><span class="chord">G</span><span class="lyric">say,</span></span> “How [Em] do you [Am7] do, [D7] do you [G] do?” <span class="ch"><span class="chord">C/D</span><span class="lyric">&nbsp;</span></span></p>
+<span class="ch"><span class="chord">G</span><span class="lyric">Can</span></span> you say, "How do you do, do you do, do you do?"<br>
+<span class="ch"><span class="chord">G</span><span class="lyric">Can</span></span> you say, "How do you <span class="ch"><span class="chord">Em</span><span class="lyric">do,</span></span> how do you <span class="ch"><span class="chord">Am</span><span class="lyric">do?"</span></span> <span class="ch"><span class="chord">D</span><span class="lyric">&nbsp;</span></span><br>
+We can <span class="ch"><span class="chord">Am7</span><span class="lyric">say,</span></span> "How do you <span class="ch"><span class="chord">D7</span><span class="lyric">do?"</span></span> and "I’m just <span class="ch"><span class="chord">G</span><span class="lyric">fine</span></span> and how are you?"<br>
+<span class="ch"><span class="chord">C</span><span class="lyric">We</span></span> can <span class="ch"><span class="chord">G</span><span class="lyric">say,</span></span> "How <span class="ch"><span class="chord">Em</span><span class="lyric">do</span></span> you <span class="ch"><span class="chord">Am7</span><span class="lyric">do,</span></span> <span class="ch"><span class="chord">D7</span><span class="lyric">do</span></span> you <span class="ch"><span class="chord">G</span><span class="lyric">do?"</span></span> <span class="ch"><span class="chord">C/D</span><span class="lyric">&nbsp;</span></span></p>
 <p>2<br>
 Can you give a hand a shake, hand a shake, hand a shake?<br>
 Can you give a hand a shake, hand a shake?<br>
@@ -146,19 +146,19 @@ Can you look ’em in the eye, in the eye?<br>
 We can look ’em in the eye, not the floor and not the sky!<br>
 We can look ’em in the eye, in the eye.</p>
 <p>4<br>
-Can you greet with, “Buenos dias, buenos dias, buenos dias”,<br>
-Can you greet with “Buenos dias, buenos dias.”<br>
-We can greet with “Buenos dias, we’re so glad you came to see us!”<br>
-We can greet with “Buenos dias, buenos dias.”</p>
+Can you greet with, "Buenos dias, buenos dias, buenos dias",<br>
+Can you greet with "Buenos dias, buenos dias."<br>
+We can greet with "Buenos dias, we’re so glad you came to see us!"<br>
+We can greet with "Buenos dias, buenos dias."</p>
 <p>5<br>
-Can you bow bending low and say, “Ahn nyeong hasayo?”<br>
-Can you bow low and say, “Ahn nyeong hasayo?”<br>
-We can bow bending low and say, “Ahn nyeong hasayo!”<br>
-To Koreans we say, “Ahn nyeong hasayo.”</p>
-<p>6 Can you nod and say, “Nee how,” say, “Nee how,”say, “Nee how,”<br>
-Can you nod and say, “Nee how,” say, “Nee how.”<br>
-We can nod and say, “Nee how;” They’ll say, “You know Chinese, WOW!”<br>
-We can nod and say, “Nee how,” say, “Nee how.”</p>
+Can you bow bending low and say, "Ahn nyeong hasayo?"<br>
+Can you bow low and say, "Ahn nyeong hasayo?"<br>
+We can bow bending low and say, "Ahn nyeong hasayo!"<br>
+To Koreans we say, "Ahn nyeong hasayo."</p>
+<p>6 Can you nod and say, "Nee how," say, "Nee how,"say, "Nee how,"<br>
+Can you nod and say, "Nee how," say, "Nee how."<br>
+We can nod and say, "Nee how;" They’ll say, "You know Chinese, WOW!"<br>
+We can nod and say, "Nee how," say, "Nee how."</p>
 <p>https://www.hymnal.net/en/hymn/c/10</p>
 </div>
 
@@ -237,7 +237,7 @@ We can nod and say, “Nee how,” say, “Nee how.”</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Paul-Regier\.github\.io\/songbook_quarto\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
