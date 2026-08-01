@@ -1,0 +1,29 @@
+---
+title: "Wonderf’lly"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+[G] Wonderf’lly, wonderf’ [G7] lly,   
+God made [C] me wonderf’ [Am7] lly.  
+When I [D7] look,  I can see I’m just [G] fine.  
+I’m designed perfectly,  
+[G7] Don’t need [C] changed, no [Am] siree.  
+[Am7] This same [D7] face has been in style  
+A long, long [G] while.
+
+<div style="height: 1.25rem;"></div>
+
+Ears that hear, they’re so dear!  
+Nose to smell, very well!  
+And two eyes taking pictures constantly.  
+With my mouth I can feed,  
+Drink and sing, pray and read.  
+Thank You, Lord, You made me  
+Wonderf’lly!
+
+<p style="color: #888; font-style: italic;">Truth School Junior 2026 (Adam) </p>
+
+</div>

@@ -1,0 +1,26 @@
+---
+title: "You Dear Children"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+[G] You dear children have been chosen, [Em] called by God.  
+He’s [C] placed you in the right family  
+[D] And in the right birth order.
+
+<div style="height: 1.25rem;"></div>
+
+He’s now faithfully watching over you  
+And arranging everything for His plan and purpose.
+
+<div style="height: 1.25rem;"></div>
+
+One day you too will answer God’s call  
+And will know His presence in the house of God.  
+One day you will answer God’s call.
+
+<p style="color: #888; font-style: italic;">Truth School Junior 2026 (Adam) </p>
+
+</div>

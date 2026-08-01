@@ -129,11 +129,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="song">
-<p><span class="ch"><span class="chord">D</span><span class="lyric">Our</span></span> God is long-suffering<br>
+<p>1<br>
+<span class="ch"><span class="chord">D</span><span class="lyric">Our</span></span> God is long-suffering<br>
 Be tenderhearted, kind to one <span class="ch"><span class="chord">A/D</span><span class="lyric">another</span></span><br>
 <span class="ch"><span class="chord">D</span><span class="lyric">Our</span></span> God is long-suffering<br>
 Be tenderhearted, kind to one <span class="ch"><span class="chord">A/D</span><span class="lyric">another</span></span></p>
-<p><span class="ch"><span class="chord">D</span><span class="lyric">Don’t</span></span> hide or run away,<br>
+<p>2<br>
+<span class="ch"><span class="chord">D</span><span class="lyric">Don’t</span></span> hide or run away,<br>
 <span class="ch"><span class="chord">A</span><span class="lyric">Be</span></span> mean, that’s not the <span class="ch"><span class="chord">D</span><span class="lyric">way.</span></span><br>
 <span class="ch"><span class="chord">D</span><span class="lyric">Care</span></span> for them, even pray,<br>
 <span class="ch"><span class="chord">D</span><span class="lyric">Be</span></span> tenderhearted, kind to one <span class="ch"><span class="chord">A/D</span><span class="lyric">another.</span></span></p>
@@ -214,7 +216,7 @@ Be tenderhearted, kind to one <span class="ch"><span class="chord">A/D</span><sp
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Paul-Regier\.github\.io\/songbook_quarto\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

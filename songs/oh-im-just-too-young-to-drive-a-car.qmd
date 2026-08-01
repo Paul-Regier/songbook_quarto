@@ -1,0 +1,23 @@
+---
+title: "Oh, I’m Just too Young to Drive a Car"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+**1**
+
+[F] Oh, I’m just too young to drive a [Gm] car,  
+[C7] Build a bridge or take a rocket to a [F] star.  
+[F7] But I’m [B♭] not too [Gm] young to [F] speak for [Dm] God.  
+I’m [Gm7] certainly not too [C7] young to speak for [F] God.
+
+**2**
+
+Oh, I’m just too young to drive a car,  
+Build a bridge or take a rocket to a star.  
+But I’m not too young to thank the Lord.  
+I’m certainly not too young to thank the Lord.
+
+</div>

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Say Halleljuah!">
 
-<title>Our God Is Living – Children’s Songbook</title>
+<title>update_workflow – Children's Songbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Fira+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../songbook.css">
+<link rel="stylesheet" href="songbook.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Children’s Songbook</span>
     </a>
   </div>
@@ -92,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -108,52 +142,92 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Our God Is Living</h1>
-</div>
-
-<div>
-  <div class="description">
-    Say Halleljuah!
-  </div>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
+<section id="git-workflow-for-the-songbook" class="level1">
+<h1>Git Workflow for the Songbook</h1>
+<section id="recommended-workflow-for-your-songbook" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-workflow-for-your-songbook">Recommended workflow for your songbook</h2>
+<p>Based on how you’re working:</p>
+<section id="normal-day-to-day" class="level3">
+<h3 class="anchored" data-anchor-id="normal-day-to-day">Normal day-to-day</h3>
+<ul>
+<li><code>git status</code>
+<ul>
+<li>Where am I at right now?
+<ul>
+<li>Which branch?</li>
+<li>Changes since last commit</li>
+<li>What is staged and ready to commit</li>
+</ul></li>
+</ul></li>
+<li><code>git add .</code>
+<ul>
+<li><code>.</code> = everything</li>
+</ul></li>
+<li><code>git commit -m "Update songs"</code>
+<ul>
+<li>Saves changes locally – creates a snapshot of the project on the machine.</li>
+<li><code>-m</code> = commit message</li>
+</ul></li>
+<li><code>git push</code>
+<ul>
+<li>Sends local commits to the remote repository.</li>
+<li>Makes work public/backed up.</li>
+</ul></li>
+<li><code>quarto publish gh-pages</code></li>
+</ul>
+</section>
+<section id="big-changes-css-listings-or-cleanup" class="level3">
+<h3 class="anchored" data-anchor-id="big-changes-css-listings-or-cleanup">Big changes, CSS, listings, or cleanup</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto render <span class="op">--</span>clean</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>git add <span class="op">.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"Clean rebuild"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>git push</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="adding-a-new-song" class="level2">
+<h2 class="anchored" data-anchor-id="adding-a-new-song">Adding a new song</h2>
+<ol type="1">
+<li><p>Add a new file, for example: <code>songs/new-song.qmd</code>.</p></li>
+<li><p>Preview the site:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Render and publish again:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>The homepage automatically updates with the new entry.</p></li>
+</ol>
+</section>
+<section id="mental-model" class="level2">
+<h2 class="anchored" data-anchor-id="mental-model">Mental model</h2>
+<ul>
+<li>Render = build</li>
+<li>Publish = build + deploy</li>
+</ul>
+</section>
+<section id="add-queued-new-songs" class="level2">
+<h2 class="anchored" data-anchor-id="add-queued-new-songs">Add queued new songs</h2>
+<p>Use this workflow when raw song screenshots or text files have been placed in <code>songs-to-add/</code>.</p>
+<ol type="1">
+<li><p>Inspect every file in <code>songs-to-add/</code> and group files that belong to the same song.</p></li>
+<li><p>Compare the sources with at least two completed files in <code>songs/</code>, including one with mid-word chord changes.</p></li>
+<li><p>Create one kebab-case <code>.qmd</code> file per song in <code>songs/</code> using the established front matter and <code>&lt;div class="song"&gt;</code> wrapper.</p></li>
+<li><p>Transcribe lyrics, punctuation, line breaks, stanza breaks, and chord symbols conservatively.</p></li>
+<li><p>Place every chord immediately before the sung word or syllable where it changes. Do not invent lyrics or chords that are absent from the source.</p></li>
+<li><p>Run a full render:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Inspect each new rendered song page for lyric accuracy, chord placement, line wrapping, and layout problems.</p></li>
+<li><p>If every source file for a song was processed successfully, move those raw files from <code>songs-to-add/</code> to <code>songs-added/</code>. Leave incomplete or uncertain source files in the queue.</p></li>
+<li><p>Run <code>git status</code> and review the changed files. Stage only the intended song, workflow, and archived-source files.</p></li>
+<li><p>Report the new song files, render result, archived source files, and any uncertain transcription or chord placement.</p></li>
+</ol>
 
 
-<div class="song">
-<p>[<em>Capo 2</em>]</p>
-<p>1<br>
-<span class="ch"><span class="chord">C</span><span class="lyric">Our</span></span> God is <span class="ch"><span class="chord">G</span><span class="lyric">living.</span></span> Say, Hal-le-lu- <span class="ch"><span class="chord">D</span><span class="lyric">jah</span></span><br>
-He’s living <span class="ch"><span class="chord">A</span><span class="lyric">in</span></span> us. Say, Hal-le-lu- <span class="ch"><span class="chord">D-D7</span><span class="lyric">jah</span></span><br>
-We taste His <span class="ch"><span class="chord">G</span><span class="lyric">riches.</span></span> He is our <span class="ch"><span class="chord">D</span><span class="lyric">portion.</span></span><br>
-<span class="ch"><span class="chord">A</span><span class="lyric">Just</span></span> say, Oh <span class="ch"><span class="chord">A7</span><span class="lyric">Lord,</span></span> To taste and <span class="ch"><span class="chord">D-G-D</span><span class="lyric">see</span></span></p>
-<p>2<br>
-We come together. There’s nothing better.<br>
-For in the Spirit we are His family,<br>
-His living Body! We just express Him.<br>
-Jesus is our reality.</p>
-<p>3<br>
-Our God is living, He’s not a statue,<br>
-Our God can see us, our God can hear, too.<br>
-He’s not an idol of gold or silver,<br>
-We serve the God who’s real and true!</p>
-</div>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

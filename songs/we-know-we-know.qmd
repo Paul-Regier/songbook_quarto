@@ -1,0 +1,27 @@
+---
+title: "We Know, We Know"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+[E] We know, we know  
+(We know, we know)  
+[A] That we have passed  
+(That we have passed)  
+[E] Out of death  
+(Out of death)  
+[B] And into life  
+(And into life)
+
+<div style="height: 1.25rem;"></div>
+
+[E] Because we love  
+(Because we love)  
+[A] We love the brothers  
+(We love the brothers)  
+[E] We know we passed from [B] death to life  
+[B7] Because we love the [E] brothers.
+
+</div>

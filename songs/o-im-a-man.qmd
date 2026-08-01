@@ -1,0 +1,17 @@
+---
+title: "O I’m a Man"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+O I’m a [G] man; I’m the [Em] meaning of the [C] uni- [G] verse;  
+Yes, I’m a man, I’m the [Em] meaning of the [A7] uni- [D] verse!  
+God made me [G] such, [G7]  
+I am so [C] much; [Am]  
+I’m the [G] center and the [D] meaning of the uni- [G] verse!
+
+<p style="color: #888; font-style: italic;">Truth School Junior 2026 (Adam) </p>
+
+</div>

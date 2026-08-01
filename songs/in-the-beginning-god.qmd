@@ -1,0 +1,30 @@
+---
+title: "In the Beginning God"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+[C] In the be- [G] ginning God [Am7-Fmaj7]  
+Cre- [C] ated the [G] heavens and the [C-G] earth.  
+[C] In the be- [G] ginning God [Am7-Fmaj7]  
+Cre- [C] ated the [G] heavens and the [C-G] earth.  
+[Fmaj7] In the be- [C] ginning [Fmaj7] God [C] created  
+The [Dm7] heavens [G] and the [C] earth.
+
+<div style="height: 1.25rem;"></div>
+
+The [G] first day God said, [C] Let there be light.  
+The [G] second day God made the [C] air.  
+The [G] third day God said, Let the [C] dry land appear.   
+The [Fmaj7] fourth day He made the sun and [G] moon.  
+The [Fmaj7] fifth day God said, Let the [Cmaj7] birds fly and fish swim.   
+The [Fmaj7] sixth day He made the [G] animals.  
+Then [C] God said, [G] Let Us [C] make [G] man.  
+The [Dm7] seventh [G] day He [C] rested. [Dm7]  
+And it was [G] very [C] good.
+
+<p style="color: #888; font-style: italic;">Truth School Junior 2026 (Adam) </p>
+
+</div>

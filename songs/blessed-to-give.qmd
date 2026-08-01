@@ -1,0 +1,22 @@
+---
+title: "Blessed to Give"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+[D] Blessed to give,  
+[G] It’s more blessed to give  
+[D7] It’s more blessed to give than [G] receive!  
+
+[D] Blessed to give,  
+[G] It’s more blessed to give  
+[D7] It’s more blessed to give than [G] receive!  
+
+[D] Acts Twenty: [G] ThirtyFive— more  
+[D7] blessed To give than to  
+[G] receive! Acts [D] Twenty: [G] ThirtyFive—  
+[D7] more blessed To give than to [G] receive!
+
+</div>
