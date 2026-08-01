@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Church in Norman Children’s Songbook – Children's Songbook</title>
+<title>update_workflow – Children's Songbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,67 +102,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      page: 30,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Fira+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="songbook.css">
 </head>
@@ -152,7 +126,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -168,315 +142,94 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Church in Norman Children’s Songbook</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<blockquote class="blockquote">
-<p>Songs are listed by title, alphabetically below. You also search by words in the song.</p>
-</blockquote>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-file-modified-sort="1780695410035" data-listing-reading-time-sort="1" data-listing-word-count-sort="119" data-listing-title-sort="Adam and God" data-listing-filename-sort="adam-and-god.qmd">
-<td>
-<a href="./songs/adam-and-god.html" class="title listing-title">Adam and God</a>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1771449573567" data-listing-reading-time-sort="1" data-listing-word-count-sort="193" data-listing-title-sort="Before God Put the Leaves on the Trees" data-listing-filename-sort="before-god-put.qmd">
-<td>
-<a href="./songs/before-god-put.html" class="title listing-title">Before God Put the Leaves on the Trees</a>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1771449574405" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Behind the Scenes" data-listing-filename-sort="behind-the-scenes.qmd">
-<td>
-<a href="./songs/behind-the-scenes.html" class="title listing-title">Behind the Scenes</a>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-file-modified-sort="1785619909817" data-listing-reading-time-sort="1" data-listing-word-count-sort="76" data-listing-title-sort="Blessed to Give" data-listing-filename-sort="blessed-to-give.qmd">
-<td>
-<a href="./songs/blessed-to-give.html" class="title listing-title">Blessed to Give</a>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-file-modified-sort="1771449937455" data-listing-reading-time-sort="2" data-listing-word-count-sort="318" data-listing-title-sort="Can you say, How do you do?" data-listing-filename-sort="can-you-say-how-do-you-do.qmd">
-<td>
-<a href="./songs/can-you-say-how-do-you-do.html" class="title listing-title">Can you say, How do you do?</a>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-file-modified-sort="1780839750980" data-listing-reading-time-sort="1" data-listing-word-count-sort="68" data-listing-title-sort="Channel of Blessing" data-listing-filename-sort="channel-of-blessing.qmd">
-<td>
-<a href="./songs/channel-of-blessing.html" class="title listing-title">Channel of Blessing</a>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-file-modified-sort="1771449226618" data-listing-reading-time-sort="1" data-listing-word-count-sort="111" data-listing-title-sort="Don't Blame Others" data-listing-filename-sort="dont-blame-others.qmd">
-<td>
-<a href="./songs/dont-blame-others.html" class="title listing-title">Don’t Blame Others</a>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-file-modified-sort="1771449938086" data-listing-reading-time-sort="1" data-listing-word-count-sort="113" data-listing-title-sort="Ev'rybody Ought to Know" data-listing-filename-sort="evrybody-ought-to-know.qmd">
-<td>
-<a href="./songs/evrybody-ought-to-know.html" class="title listing-title">Ev’rybody Ought to Know</a>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-file-modified-sort="1780696122570" data-listing-reading-time-sort="1" data-listing-word-count-sort="144" data-listing-title-sort="God Has Chosen Us" data-listing-filename-sort="god-has-chosen-us.qmd">
-<td>
-<a href="./songs/god-has-chosen-us.html" class="title listing-title">God Has Chosen Us</a>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-file-modified-sort="1780792604142" data-listing-reading-time-sort="1" data-listing-word-count-sort="190" data-listing-title-sort="Honor and Obey" data-listing-filename-sort="honor-and-obey.qmd">
-<td>
-<a href="./songs/honor-and-obey.html" class="title listing-title">Honor and Obey</a>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-file-modified-sort="1780838539981" data-listing-reading-time-sort="1" data-listing-word-count-sort="85" data-listing-title-sort="I Keep Falling in Love with Him" data-listing-filename-sort="i-keep-falling-in-love.qmd">
-<td>
-<a href="./songs/i-keep-falling-in-love.html" class="title listing-title">I Keep Falling in Love with Him</a>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-file-modified-sort="1774143613038" data-listing-reading-time-sort="1" data-listing-word-count-sort="77" data-listing-title-sort="I Wanna Be Good Ground" data-listing-filename-sort="i-want-to-be-good-ground.qmd">
-<td>
-<a href="./songs/i-want-to-be-good-ground.html" class="title listing-title">I Wanna Be Good Ground</a>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-file-modified-sort="1780695687633" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="I Want to Thank God for Making Me" data-listing-filename-sort="i-want-to-thank-god.qmd">
-<td>
-<a href="./songs/i-want-to-thank-god.html" class="title listing-title">I Want to Thank God for Making Me</a>
-</td>
-
-</tr>
-
-<tr data-index="13" data-listing-file-modified-sort="1766784826778" data-listing-reading-time-sort="1" data-listing-word-count-sort="94" data-listing-title-sort="I am a Tree with Roots" data-listing-filename-sort="tree-with-roots.qmd">
-<td>
-<a href="./songs/tree-with-roots.html" class="title listing-title">I am a Tree with Roots</a>
-</td>
-
-</tr>
-
-<tr data-index="14" data-listing-file-modified-sort="1780839746647" data-listing-reading-time-sort="1" data-listing-word-count-sort="173" data-listing-title-sort="In the Beginning God" data-listing-filename-sort="in-the-beginning-god.qmd">
-<td>
-<a href="./songs/in-the-beginning-god.html" class="title listing-title">In the Beginning God</a>
-</td>
-
-</tr>
-
-<tr data-index="15" data-listing-file-modified-sort="1771449242447" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Jesus Can Do Anything" data-listing-filename-sort="jesus-can-do-anything.qmd">
-<td>
-<a href="./songs/jesus-can-do-anything.html" class="title listing-title">Jesus Can Do Anything</a>
-</td>
-
-</tr>
-
-<tr data-index="16" data-listing-file-modified-sort="1771448725722" data-listing-reading-time-sort="1" data-listing-word-count-sort="86" data-listing-title-sort="Keep My Heart" data-listing-filename-sort="keep-my-heart.qmd">
-<td>
-<a href="./songs/keep-my-heart.html" class="title listing-title">Keep My Heart</a>
-</td>
-
-</tr>
-
-<tr data-index="17" data-listing-file-modified-sort="1771449572096" data-listing-reading-time-sort="1" data-listing-word-count-sort="103" data-listing-title-sort="Listen, Listen, Your Conscience Speaks to You" data-listing-filename-sort="listen-listen.qmd">
-<td>
-<a href="./songs/listen-listen.html" class="title listing-title">Listen, Listen, Your Conscience Speaks to You</a>
-</td>
-
-</tr>
-
-<tr data-index="18" data-listing-file-modified-sort="1771449009240" data-listing-reading-time-sort="1" data-listing-word-count-sort="124" data-listing-title-sort="Lord, You Are More Precious Than Silver" data-listing-filename-sort="Lord-you-are-more-precious.qmd">
-<td>
-<a href="./songs/Lord-you-are-more-precious.html" class="title listing-title">Lord, You Are More Precious Than Silver</a>
-</td>
-
-</tr>
-
-<tr data-index="19" data-listing-file-modified-sort="1785619970985" data-listing-reading-time-sort="1" data-listing-word-count-sort="82" data-listing-title-sort="My God Is So Big" data-listing-filename-sort="my-god-is-so-big.qmd">
-<td>
-<a href="./songs/my-god-is-so-big.html" class="title listing-title">My God Is So Big</a>
-</td>
-
-</tr>
-
-<tr data-index="20" data-listing-file-modified-sort="1772921408132" data-listing-reading-time-sort="1" data-listing-word-count-sort="69" data-listing-title-sort="Not One Sparrow" data-listing-filename-sort="not-one-sparrow.qmd">
-<td>
-<a href="./songs/not-one-sparrow.html" class="title listing-title">Not One Sparrow</a>
-</td>
-
-</tr>
-
-<tr data-index="21" data-listing-file-modified-sort="1780695828907" data-listing-reading-time-sort="1" data-listing-word-count-sort="68" data-listing-title-sort="O I’m a Man" data-listing-filename-sort="o-im-a-man.qmd">
-<td>
-<a href="./songs/o-im-a-man.html" class="title listing-title">O I’m a Man</a>
-</td>
-
-</tr>
-
-<tr data-index="22" data-listing-file-modified-sort="1785619703183" data-listing-reading-time-sort="1" data-listing-word-count-sort="92" data-listing-title-sort="Oh, I’m Just too Young to Drive a Car" data-listing-filename-sort="oh-im-just-too-young-to-drive-a-car.qmd">
-<td>
-<a href="./songs/oh-im-just-too-young-to-drive-a-car.html" class="title listing-title">Oh, I’m Just too Young to Drive a Car</a>
-</td>
-
-</tr>
-
-<tr data-index="23" data-listing-file-modified-sort="1771449933353" data-listing-reading-time-sort="1" data-listing-word-count-sort="120" data-listing-title-sort="Our God Is Living" data-listing-filename-sort="our-god-is-living.qmd">
-<td>
-<a href="./songs/our-god-is-living.html" class="title listing-title">Our God Is Living</a>
-</td>
-
-</tr>
-
-<tr data-index="24" data-listing-file-modified-sort="1771449938614" data-listing-reading-time-sort="1" data-listing-word-count-sort="67" data-listing-title-sort="Our God Is Long-suffering" data-listing-filename-sort="our-god-is-longsuffering.qmd">
-<td>
-<a href="./songs/our-god-is-longsuffering.html" class="title listing-title">Our God Is Long-suffering</a>
-</td>
-
-</tr>
-
-<tr data-index="25" data-listing-file-modified-sort="1771449372634" data-listing-reading-time-sort="1" data-listing-word-count-sort="58" data-listing-title-sort="Romans 13:1" data-listing-filename-sort="romans13-1.qmd">
-<td>
-<a href="./songs/romans13-1.html" class="title listing-title">Romans 13:1</a>
-</td>
-
-</tr>
-
-<tr data-index="26" data-listing-file-modified-sort="1771449007456" data-listing-reading-time-sort="1" data-listing-word-count-sort="117" data-listing-title-sort="Seven Priests, Seven Trumpets" data-listing-filename-sort="seven-priests.qmd">
-<td>
-<a href="./songs/seven-priests.html" class="title listing-title">Seven Priests, Seven Trumpets</a>
-</td>
-
-</tr>
-
-<tr data-index="27" data-listing-file-modified-sort="1766784828627" data-listing-reading-time-sort="1" data-listing-word-count-sort="38" data-listing-title-sort="Singing, Praying, Praising, Thanking" data-listing-filename-sort="singing-praying-praising.qmd">
-<td>
-<a href="./songs/singing-praying-praising.html" class="title listing-title">Singing, Praying, Praising, Thanking</a>
-</td>
-
-</tr>
-
-<tr data-index="28" data-listing-file-modified-sort="1765672709070" data-listing-reading-time-sort="2" data-listing-word-count-sort="249" data-listing-title-sort="Take Twelve Stones Out" data-listing-filename-sort="take-twelve-strones-out.qmd">
-<td>
-<a href="./songs/take-twelve-strones-out.html" class="title listing-title">Take Twelve Stones Out</a>
-</td>
-
-</tr>
-
-<tr data-index="29" data-listing-file-modified-sort="1780839748194" data-listing-reading-time-sort="1" data-listing-word-count-sort="79" data-listing-title-sort="We Know, We Know" data-listing-filename-sort="we-know-we-know.qmd">
-<td>
-<a href="./songs/we-know-we-know.html" class="title listing-title">We Know, We Know</a>
-</td>
-
-</tr>
-
-<tr data-index="30" data-listing-file-modified-sort="1780839749859" data-listing-reading-time-sort="1" data-listing-word-count-sort="179" data-listing-title-sort="When I Grow Up I Want to Be a Man of God" data-listing-filename-sort="when-i-grow-up.qmd">
-<td>
-<a href="./songs/when-i-grow-up.html" class="title listing-title">When I Grow Up I Want to Be a Man of God</a>
-</td>
-
-</tr>
-
-<tr data-index="31" data-listing-file-modified-sort="1771449490736" data-listing-reading-time-sort="1" data-listing-word-count-sort="141" data-listing-title-sort="Why Was a Cup Made?" data-listing-filename-sort="why-was-a-cup-made.qmd">
-<td>
-<a href="./songs/why-was-a-cup-made.html" class="title listing-title">Why Was a Cup Made?</a>
-</td>
-
-</tr>
-
-<tr data-index="32" data-listing-file-modified-sort="1780691150868" data-listing-reading-time-sort="1" data-listing-word-count-sort="109" data-listing-title-sort="Wonderf’lly" data-listing-filename-sort="wonderfully.qmd">
-<td>
-<a href="./songs/wonderfully.html" class="title listing-title">Wonderf’lly</a>
-</td>
-
-</tr>
-
-<tr data-index="33" data-listing-file-modified-sort="1771449501626" data-listing-reading-time-sort="1" data-listing-word-count-sort="109" data-listing-title-sort="You Can't Always Trust What You See" data-listing-filename-sort="you-cant-always-trust.qmd">
-<td>
-<a href="./songs/you-cant-always-trust.html" class="title listing-title">You Can’t Always Trust What You See</a>
-</td>
-
-</tr>
-
-<tr data-index="34" data-listing-file-modified-sort="1780706029022" data-listing-reading-time-sort="1" data-listing-word-count-sort="82" data-listing-title-sort="You Dear Children" data-listing-filename-sort="you-dear-children.rmd">
-<td>
-<a href="./songs/you-dear-children.html" class="title listing-title">You Dear Children</a>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div></main> <!-- /main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="git-workflow-for-the-songbook" class="level1">
+<h1>Git Workflow for the Songbook</h1>
+<section id="recommended-workflow-for-your-songbook" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-workflow-for-your-songbook">Recommended workflow for your songbook</h2>
+<p>Based on how you’re working:</p>
+<section id="normal-day-to-day" class="level3">
+<h3 class="anchored" data-anchor-id="normal-day-to-day">Normal day-to-day</h3>
+<ul>
+<li><code>git status</code>
+<ul>
+<li>Where am I at right now?
+<ul>
+<li>Which branch?</li>
+<li>Changes since last commit</li>
+<li>What is staged and ready to commit</li>
+</ul></li>
+</ul></li>
+<li><code>git add .</code>
+<ul>
+<li><code>.</code> = everything</li>
+</ul></li>
+<li><code>git commit -m "Update songs"</code>
+<ul>
+<li>Saves changes locally – creates a snapshot of the project on the machine.</li>
+<li><code>-m</code> = commit message</li>
+</ul></li>
+<li><code>git push</code>
+<ul>
+<li>Sends local commits to the remote repository.</li>
+<li>Makes work public/backed up.</li>
+</ul></li>
+<li><code>quarto publish gh-pages</code></li>
+</ul>
+</section>
+<section id="big-changes-css-listings-or-cleanup" class="level3">
+<h3 class="anchored" data-anchor-id="big-changes-css-listings-or-cleanup">Big changes, CSS, listings, or cleanup</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto render <span class="op">--</span>clean</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>git add <span class="op">.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"Clean rebuild"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>git push</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="adding-a-new-song" class="level2">
+<h2 class="anchored" data-anchor-id="adding-a-new-song">Adding a new song</h2>
+<ol type="1">
+<li><p>Add a new file, for example: <code>songs/new-song.qmd</code>.</p></li>
+<li><p>Preview the site:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Render and publish again:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>The homepage automatically updates with the new entry.</p></li>
+</ol>
+</section>
+<section id="mental-model" class="level2">
+<h2 class="anchored" data-anchor-id="mental-model">Mental model</h2>
+<ul>
+<li>Render = build</li>
+<li>Publish = build + deploy</li>
+</ul>
+</section>
+<section id="add-queued-new-songs" class="level2">
+<h2 class="anchored" data-anchor-id="add-queued-new-songs">Add queued new songs</h2>
+<p>Use this workflow when raw song screenshots or text files have been placed in <code>songs-to-add/</code>.</p>
+<ol type="1">
+<li><p>Inspect every file in <code>songs-to-add/</code> and group files that belong to the same song.</p></li>
+<li><p>Compare the sources with at least two completed files in <code>songs/</code>, including one with mid-word chord changes.</p></li>
+<li><p>Create one kebab-case <code>.qmd</code> file per song in <code>songs/</code> using the established front matter and <code>&lt;div class="song"&gt;</code> wrapper.</p></li>
+<li><p>Transcribe lyrics, punctuation, line breaks, stanza breaks, and chord symbols conservatively.</p></li>
+<li><p>Place every chord immediately before the sung word or syllable where it changes. Do not invent lyrics or chords that are absent from the source.</p></li>
+<li><p>Run a full render:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Inspect each new rendered song page for lyric accuracy, chord placement, line wrapping, and layout problems.</p></li>
+<li><p>If every source file for a song was processed successfully, move those raw files from <code>songs-to-add/</code> to <code>songs-added/</code>. Leave incomplete or uncertain source files in the queue.</p></li>
+<li><p>Run <code>git status</code> and review the changed files. Stage only the intended song, workflow, and archived-source files.</p></li>
+<li><p>Report the new song files, render result, archived source files, and any uncertain transcription or chord placement.</p></li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
