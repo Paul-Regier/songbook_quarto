@@ -155,7 +155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="normal-day-to-day" class="level3">
 <h3 class="anchored" data-anchor-id="normal-day-to-day">Normal day-to-day</h3>
 <ul>
-<li><code>git status</code>
+<li><p><code>git status</code></p>
 <ul>
 <li>Where am I at right now?
 <ul>
@@ -164,30 +164,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What is staged and ready to commit</li>
 </ul></li>
 </ul></li>
-<li><code>git add .</code>
-<ul>
-<li><code>.</code> = everything</li>
-</ul></li>
-<li><code>git commit -m "Update songs"</code>
+<li><p>Stage only the files intended for the update, for example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>git add songs<span class="op">/</span>new-song<span class="op">.</span><span class="fu">qmd</span> songs_to_add<span class="op">/</span>source<span class="op">.</span><span class="fu">png</span> songs_added<span class="op">/</span>source<span class="op">.</span><span class="fu">png</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Review <code>git status</code> before committing. Avoid <code>git add .</code> when unrelated or generated files are present.</p></li>
+<li><p><code>git commit -m "Update songs"</code></p>
 <ul>
 <li>Saves changes locally – creates a snapshot of the project on the machine.</li>
 <li><code>-m</code> = commit message</li>
 </ul></li>
-<li><code>git push</code>
+<li><p><code>git push</code></p>
 <ul>
 <li>Sends local commits to the remote repository.</li>
 <li>Makes work public/backed up.</li>
 </ul></li>
-<li><code>quarto publish gh-pages</code></li>
+<li><p><code>quarto publish gh-pages</code></p></li>
 </ul>
 </section>
 <section id="big-changes-css-listings-or-cleanup" class="level3">
 <h3 class="anchored" data-anchor-id="big-changes-css-listings-or-cleanup">Big changes, CSS, listings, or cleanup</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto render <span class="op">--</span>clean</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>git add <span class="op">.</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"Clean rebuild"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>git push</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto render <span class="op">--</span>clean</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>git status</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>git add _quarto<span class="op">.</span><span class="fu">yml</span> songbook<span class="op">.</span><span class="fu">css</span> songs<span class="op">/</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"Clean rebuild"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>git push</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Adjust the <code>git add</code> paths to match the files intentionally changed. Include <code>_site/</code> only when intentionally committing generated site output.</p>
 </section>
 </section>
 <section id="adding-a-new-song" class="level2">
@@ -195,9 +196,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><p>Add a new file, for example: <code>songs/new-song.qmd</code>.</p></li>
 <li><p>Preview the site:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Render and publish again:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quarto publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>The homepage automatically updates with the new entry.</p></li>
 </ol>
 </section>
@@ -210,18 +211,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="add-queued-new-songs" class="level2">
 <h2 class="anchored" data-anchor-id="add-queued-new-songs">Add queued new songs</h2>
-<p>Use this workflow when raw song screenshots or text files have been placed in <code>songs-to-add/</code>.</p>
+<p>Use this manual workflow when raw song screenshots or text files have been placed in <code>songs_to_add/</code>. Adding a file to the directory does not automatically create or publish a song.</p>
 <ol type="1">
-<li><p>Inspect every file in <code>songs-to-add/</code> and group files that belong to the same song.</p></li>
+<li><p>Inspect every file in <code>songs_to_add/</code> and group files that belong to the same song. A song may have multiple screenshots or text files.</p></li>
 <li><p>Compare the sources with at least two completed files in <code>songs/</code>, including one with mid-word chord changes.</p></li>
 <li><p>Create one kebab-case <code>.qmd</code> file per song in <code>songs/</code> using the established front matter and <code>&lt;div class="song"&gt;</code> wrapper.</p></li>
 <li><p>Transcribe lyrics, punctuation, line breaks, stanza breaks, and chord symbols conservatively.</p></li>
 <li><p>Place every chord immediately before the sung word or syllable where it changes. Do not invent lyrics or chords that are absent from the source.</p></li>
+<li><p>When a song has a chorus, include the complete chorus between each verse so the displayed song does not require scrolling back to an earlier chorus. Do not leave shorthand placeholders such as <code>[Chorus]</code> or <code>[Refrain]</code> in the finished song.</p></li>
 <li><p>Run a full render:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Inspect each new rendered song page for lyric accuracy, chord placement, line wrapping, and layout problems.</p></li>
-<li><p>If every source file for a song was processed successfully, move those raw files from <code>songs-to-add/</code> to <code>songs-added/</code>. Leave incomplete or uncertain source files in the queue.</p></li>
-<li><p>Run <code>git status</code> and review the changed files. Stage only the intended song, workflow, and archived-source files.</p></li>
+<div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Inspect each new rendered song page for lyric accuracy, chord placement, line wrapping, chorus placement, and layout problems.</p></li>
+<li><p>If every source file for a song was processed successfully, move all of that song’s raw files from <code>songs_to_add/</code> to <code>songs_added/</code>. Leave incomplete or uncertain source files in the queue.</p></li>
+<li><p>Confirm that the new <code>.qmd</code> file appears automatically in the homepage listing generated from <code>songs/</code>.</p></li>
+<li><p>Run <code>git status</code> and review the changed files. Rendering modifies the tracked <code>_site/</code> output; stage it only when intentionally updating published artifacts. Otherwise, stage only the intended song, workflow, and archived-source files.</p></li>
 <li><p>Report the new song files, render result, archived source files, and any uncertain transcription or chord placement.</p></li>
 </ol>
 
