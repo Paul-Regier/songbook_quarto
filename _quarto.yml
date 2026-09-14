@@ -11,6 +11,7 @@ website:
 
 format:
   html:
+    from: markdown-smart
     theme: cosmo
     toc: false
     css: songbook.css

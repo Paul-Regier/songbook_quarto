@@ -5,6 +5,7 @@ listing:
   sort: "title"
   type: table
   fields: [title]
+  page-size: 100
 ---
 
 > Songs are listed by title, alphabetically below. You also search by words in the song.

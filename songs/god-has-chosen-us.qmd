@@ -9,15 +9,15 @@ page-layout: article
 <div class="song">
 
 [D] God has chosen us, we [G] will answer and obey.  
-[D] We will choose to take God’s [A] way.  
+[D] We will choose to take God's [A] way.  
 [D] God has chosen us, we will [G] answer and obey.  
-[D] We will choose to [A] take God’s [D] way.
+[D] We will choose to [A] take God's [D] way.
 
 <div style="height: 1.25rem;"></div>
 
 [D] We choose to obey, follow [G] what our parents say.  
-[D] We’ll take this first step, un- [A] til one  day.  
-[D] We choose to obey, and to [G] take our parents’ way.  
+[D] We'll take this first step, un- [A] til one  day.  
+[D] We choose to obey, and to [G] take our parents' way.  
 [D] Stand for God and His [A] purpose each [D] day.
 
 <div style="height: 1.25rem;"></div>

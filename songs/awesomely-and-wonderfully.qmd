@@ -1,0 +1,25 @@
+---
+title: "I am Awesomely and Wonderfully Made"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+Part 1  
+[D7] I am [G] awesomely and wonderfully  
+[C] awesomely and wonder- [G] fully  
+awesomely and wonderfully [D7] made!  
+Your works are [G] wonderful and I [G7] know it  
+Your works are [C] wonderful and I know it  
+Your works are [G] wonderful and my [D] soul knows [D7] it  
+[G-C-G] well!  
+
+Part 2  
+[D7] I am [G] awesomely [G7] and [C] wonderfully  
+I'm [G] awesomely and [D7] wonderfully made!  
+Your works are [G] wonder- [G7] ful  
+They are [C] wonderful  
+And [G] my soul [D] knows it [D7] very [G-C-G] well.  
+
+</div>

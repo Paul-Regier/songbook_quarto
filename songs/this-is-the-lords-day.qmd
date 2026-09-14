@@ -1,0 +1,18 @@
+---
+title: "This is the Lord's Day"
+description: ""
+page-layout: article
+---
+
+<div class="song">
+
+[G] This is the Lord's day
+And we are [D] happy,
+To come [A] together
+And meet in [D] this way. [D7]
+With all the [G] children
+In the church in [D] Norman. [Bm]
+[A] Praise God, we're glad it's meeting [D] time.
+
+
+</div>
